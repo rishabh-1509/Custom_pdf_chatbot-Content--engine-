@@ -1,0 +1,17 @@
+#Checking for the gpu available
+
+!nvidia-smi
+#Downloading the required Libraries for the Deplopment 
+!pip install -Uqq pip --progess-bar off
+!pip install -qqq torch==2.0.1 --progress-bar off
+!pip install -qqq transformers==4.31.0 --progress-bar off
+!pip install -qqq langchain==0.0.266 --progress-bar off
+!pip install -qqq chromadb==0.4.5 --progress-bar off
+!pip install -qqq pypdf==3.15.0 --progress-bar off
+!pip install -qqq xformers==0.0.20 --progress-bar off
+!pip install -qqq sentence_transformers==2.2.2 --progress-bar off
+!pip install -qqq InstructorEmbedding==1.0.1 --progress-bar off
+!pip install -qqq pdf2image==1.16.3 --progress-bar off
+#Downloading the Latest Lama -2 version on the local pc 
+!wget -q https://github.com/PanQiWei/AutoGPTQ/releases/download/v0.4.0/auto_gptq-0.4.0+cu118-cp310-cp310-linux_x86_64.whl
+!pip install -qqq auto_gptq-0.4.0+cu118-cp310-cp310-linux_x86_64.whl --progress-bar off
